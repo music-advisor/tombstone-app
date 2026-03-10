@@ -288,7 +288,7 @@ export default function ExportPanel({ tombstones, onClose }: Props) {
         const bytes = new Uint8Array(binary.length);
         for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
         const dpiPng = embedDpi(bytes, EXPORT_DPI);
-        const blob = new Blob([dpiPng], { type: 'image/png' });
+        const blob = new Blob([dpiPng.buffer as ArrayBuffer], { type: 'image/png' });
         const url = URL.createObjectURL(blob);
         const link = document.createElement('a');
         link.download = `tombstones-page${activePage + 1}-${new Date().toISOString().slice(0, 10)}.png`;
