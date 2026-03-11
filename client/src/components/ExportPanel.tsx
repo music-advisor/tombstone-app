@@ -61,10 +61,10 @@ function ExportCard({ tombstone, settings }: { tombstone: Tombstone; settings: C
         )}
       </div>
       <div style={{ padding: '0 6px 10px', background: '#ffffff', flexShrink: 0 }}>
-        <p style={{ margin: '0 0 1px', fontSize: settings.fontSize, fontWeight: 700, color: settings.fontColor, fontFamily: AVENIR, lineHeight: 1.45, whiteSpace: 'normal', wordBreak: 'break-word', overflowWrap: 'break-word', textAlign: 'center' }}>
+        <p style={{ margin: '0 0 1px', fontSize: settings.fontSize, fontWeight: 700, color: settings.fontColor, fontFamily: AVENIR, lineHeight: 1.45, whiteSpace: 'normal', wordBreak: 'break-word', overflowWrap: 'break-word', textAlign: 'center', wordSpacing: 'normal', letterSpacing: 'normal' }}>
           {tombstone.role || '—'}
         </p>
-        <p style={{ margin: 0, fontSize: settings.fontSize, fontWeight: 700, color: settings.fontColor, fontFamily: AVENIR, lineHeight: 1.3, textAlign: 'center' }}>
+        <p style={{ margin: 0, fontSize: settings.fontSize, fontWeight: 700, color: settings.fontColor, fontFamily: AVENIR, lineHeight: 1.3, textAlign: 'center', wordSpacing: 'normal', letterSpacing: 'normal' }}>
           {tombstone.deal_year}
         </p>
       </div>
